@@ -7,7 +7,7 @@ int main() {
     cin >> A >> N;
 
     for(i = 0; i < N; i++){
-        A = A + N;
+        A += N;
         cout << A << "\n";
     }
     // Please write your code here.
