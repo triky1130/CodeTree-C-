@@ -5,60 +5,17 @@ int main() {
     int score;
     cin >> score;
 
-    if(score >= 90){
-        for(int i = 0; i < 100 - score + 1; i++){
+    for(int i = score; i <= 100; i++){
+        if(i >= 90)
             cout << "A" << " ";
-        }
-    }
-    else if(score >= 80){
-        for(int i = 0; i < 90 - score; i++){
+        else if(i >= 80)
             cout << "B" << " ";
-        }
-        for(int i = 0; i < 11; i++){
-            cout << "A" << " ";
-        }
-    }
-    else if(score >= 70){
-        for(int i = 0; i < 80 - score; i++){
+        else if(i >= 70)
             cout << "C" << " ";
-        }
-        for(int i = 0; i < 11; i++){
-            cout << "B" << " ";
-        }
-        for(int i = 0; i < 12; i++){
-            cout << "A" << " ";
-        }
-    }
-    else if(score >= 60){
-        for(int i = 0; i < 70 - score; i++){
+        else if(I >= 60)
             cout << "D" << " ";
-        }
-        for(int i = 0; i < 11; i++){
-            cout << "C" << " ";
-        }
-        for(int i = 0; i < 11; i++){
-            cout << "B" << " ";
-        }
-        for(int i = 0; i < 12; i++){
-            cout << "A" << " ";
-        }
-    }
-    else if(score < 60){
-        for(int i = 0; i < 60 - score; i++){
+        else
             cout << "F" << " ";
-        }
-        for(int i = 0; i < 11; i++){
-            cout << "D" << " ";
-        }
-        for(int i = 0; i < 11; i++){
-            cout << "C" << " ";
-        }
-        for(int i = 0; i < 11; i++){
-            cout << "B" << " ";
-        }
-        for(int i = 0; i < 12; i++){
-            cout << "A" << " ";
-        }
     }
     return 0;
 }
